@@ -48,6 +48,6 @@ if (rutaActual.includes('index.html') || rutaActual === '/') {
 		
 	} else {
 		// Error: no hay usuario con sesión iniciada => se redirige al login
-		window.location.href = '/index.html';
+		window.location.href = rutaActual.includes('/html/') ? '../index.html' : 'index.html';
 	}
 }
