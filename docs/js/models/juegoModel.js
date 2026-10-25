@@ -7,7 +7,7 @@ export const COLOR_GOMA = '#FFFFFF';
 export function crearEstadoPartida(dificultadNombre) {
 	// Configuraciones de juego según la dificultad
 	const CONFIGS = {
-	    principiante: { size: 5, numColors: 2, time: 30 },
+	    principiante: { size: 5, numColors: 2, time: 60 },
 	    intermedio: { size: 8, numColors: 4, time: 90 },
 	    avanzado: { size: 12, numColors: 6, time: 120 }
 	};
