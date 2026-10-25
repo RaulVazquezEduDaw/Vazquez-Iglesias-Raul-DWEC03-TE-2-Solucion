@@ -1,0 +1,35 @@
+/* Estilos propios de la vista de login */
+
+/* ESTILOS DE ERROR */
+.input-error-empty {
+    border: 2px solid #E25E2B !important;
+    box-shadow: 4px 4px 0px rgba(226, 94, 43, 0.4);
+}
+
+.tooltip-empty {
+    position: absolute;
+    top: 110%;
+    right: 0;
+    background-color: white;
+    border: 1px solid #777;
+    padding: 5px 10px;
+    font-size: 0.85rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    border-radius: 2px;
+    z-index: 10;
+}
+
+.error-message-box {
+    background-color: #F8D7DA;
+    border: 2px solid var(--text-dark);
+    color: #A32A2A;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 0px var(--text-dark);
+    margin-top: 10px;
+}

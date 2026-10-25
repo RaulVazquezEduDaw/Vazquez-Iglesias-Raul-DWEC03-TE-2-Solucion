@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Script principal -->    
+    <script type="module" src="js/main.js"></script>
+    
+    <!-- Fuentes y estilo -->  
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    
+    <title>Pixel Copier - Login</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            
+            <div class="top-squares">
+                <div class="sq orange"></div>
+                <div class="sq yellow"></div>
+                <div class="sq green"></div>
+                <div class="sq blue"></div>
+            </div>
+
+            <h1>Pixel Copier</h1>
+            <p class="subtitle">IDENTIFÍCATE PARA CONTINUAR</p>
+
+            <form id="form-login">
+			    <div class="input-group">
+			        <div class="label-container">
+			            <svg class="icon" viewBox="0 0 24 24">
+			                <rect x="8" y="3" width="8" height="7"></rect>
+			                <rect x="5" y="12" width="14" height="6"></rect>
+			                <rect x="3" y="19" width="18" height="2"></rect>
+			            </svg>
+			            <label for="usuario">USUARIO:</label>
+			        </div>
+			        <input type="text" id="usuario" placeholder="TU USUARIO">
+			    </div>
+			
+			    <div class="input-group">
+			        <div class="label-container">
+			            <svg class="icon" viewBox="0 0 24 24">
+			                <path d="M4 9h6v6H4V9zm2 2v2h2v-2H6zm6-1h10v4H12v-4zm5 4v3h-2v-3h2zm3 0v2h-2v-2h2z"></path>
+			            </svg>
+			            <label for="password">CONTRASEÑA:</label>
+			        </div>
+			        <input type="password" id="password" placeholder="••••••••">
+			    </div>
+			
+			    <div class="btn-container">
+			        <button type="submit" id="btn-entrar">ENTRAR</button>
+			    </div>
+			</form>
+
+            <div class="divider">
+                <div class="line"></div>
+                <div class="center-square"></div>
+                <div class="line"></div>
+            </div>
+
+            <p class="footer-text">PULSA ENTRAR PARA INICIAR LA PARTIDA</p>
+        </div>
+    </div>
+</body>
+</html>

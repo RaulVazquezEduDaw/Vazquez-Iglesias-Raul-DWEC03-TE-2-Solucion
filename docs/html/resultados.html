@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Script principal -->    
+    <script type="module" src="../js/main.js"></script>
+    
+    <!-- Fuentes y estilo -->  
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/resultados.css">
+    
+    <title>Pixel Copier</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+        
+            <div class="top-squares">
+                <div class="sq orange"></div>
+                <div class="sq yellow"></div>
+                <div class="sq green"></div>
+                <div class="sq blue"></div>
+            </div>
+            
+            <!-- Icono superior (Reloj de arena o Trofeo) -->
+            <div class="icon-container">
+                <span id="resultado-icono"></span>
+            </div>
+            
+            <!-- COMPLETADO o TIEMPO AGOTADO -->
+            <h1 id="resultado-titulo"></h1>
+
+            <!-- Caja de porcentaje -->
+            <div class="precision-box">
+                <p class="precision-label">PRECISIÓN FINAL</p>
+                <p id="precision-valor" class="precision-porcentaje">0%</p>
+            </div>
+
+            <!-- Mensaje: ¡Enhorabuena! o ¡Casi lo logras! -->
+            <div class="resultado-mensaje">
+                <p id="mensaje"></p>
+            </div>
+
+            <!-- Botón para volver a jugar -->
+            <div class="btn-container" style="margin-top: 30px;">
+                <button type="button" id="btn-jugar-nuevo">JUGAR DE NUEVO</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

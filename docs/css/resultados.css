@@ -1,0 +1,71 @@
+/* Estilos propios de la vista de resultados */
+
+.resultados-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.resultados-inner {
+    background-color: var(--bg-color, #F8F5E6);
+    border: 4px solid var(--text-dark, #1a1a1a);
+    box-shadow: 12px 12px 0px var(--text-dark, #1a1a1a);
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: var(--text-dark, #1a1a1a);
+}
+
+.icon-container {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.resultados-inner h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Caja del porcentaje */
+.precision-box {
+    background-color: white;
+    border-top: 3px solid var(--text-dark, #1a1a1a);
+    border-bottom: 3px solid var(--text-dark, #1a1a1a);
+    padding: 30px 0;
+    margin-bottom: 30px;
+}
+
+.precision-label {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.9rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.precision-porcentaje {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 5rem;
+    color: #417B69;
+    margin: 0;
+    line-height: 1;
+}
+
+.resultado-mensaje {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: bold;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.resultado-mensaje p {
+    margin: 0;
+}

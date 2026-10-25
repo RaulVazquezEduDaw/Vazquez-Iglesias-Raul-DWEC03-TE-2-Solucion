@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Script principal -->    
+    <script type="module" src="../js/main.js"></script>
+    
+    <!-- Fuentes y estilo -->  
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/instrucciones.css">
+    
+    <title>Pixel Copier</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+        
+            <div class="top-squares">
+                <div class="sq orange"></div>
+                <div class="sq yellow"></div>
+                <div class="sq green"></div>
+                <div class="sq blue"></div>
+            </div>
+
+            <h1>¡HOLA, USUARIO!</h1>
+
+            <!-- Caja de instrucciones -->
+            <div class="info-box">
+                <div class="info-title">
+                    <span class="icon-key">🔑</span> INSTRUCCIONES:
+                </div>
+                <p>Copia el dibujo de la izquierda en tu lienzo.<br>Usa el ratón para pintar y los números del teclado<br>(1, 2, 3...) para cambiar de color.</p>
+            </div>
+
+            <!-- Selector de dificultad -->
+            <h2 class="section-title">SELECCIONA LA DIFICULTAD:</h2>
+
+            <form id="form-dificultad">
+                <div class="difficulty-options">
+                    <label class="diff-option selected">
+                        <input type="radio" name="dificultad" value="principiante" checked>
+                        <span class="custom-radio"></span>
+                        <span class="diff-text"><strong>1. Principiante</strong> — Lienzo 5x5, 2 colores</span>
+                    </label>
+                    <label class="diff-option">
+                        <input type="radio" name="dificultad" value="intermedio">
+                        <span class="custom-radio"></span>
+                        <span class="diff-text"><strong>2. Intermedio</strong> — Lienzo 8x8, 4 colores</span>
+                    </label>
+                    <label class="diff-option">
+                        <input type="radio" name="dificultad" value="avanzado">
+                        <span class="custom-radio"></span>
+                        <span class="diff-text"><strong>3. Avanzado</strong> — Lienzo 12x12, 6 colores</span>
+                    </label>
+                </div>
+
+                <div class="btn-container">
+                    <button type="submit" id="btn-empezar">¡EMPEZAR!</button>
+                </div>
+            </form>
+            
+            <div class="divider">
+                <div class="line"></div>
+                <div class="center-square"></div>
+                <div class="line"></div>
+            </div>
+            <p class="footer-text">ELIGE TU NIVEL Y COMIENZA A CREAR</p>
+        </div>
+    </div>
+</body>
+</html>

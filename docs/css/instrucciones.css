@@ -1,0 +1,95 @@
+/* Estilos propios de la vista de instrucciones */
+
+/* Caja de Instrucciones */
+.info-box {
+    background-color: #EEF8F4;
+    border-left: 6px solid #417B69;
+    padding: 25px;
+    margin-bottom: 40px;
+}
+
+.info-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+}
+
+.info-box p {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* Título de selector */
+.section-title {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+}
+
+/* Opciones de dificultad */
+.difficulty-options {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.diff-option {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.2s ease;
+}
+
+/* Estado Seleccionado */
+.diff-option.selected {
+    background-color: #FFF3C7; /* Fondo amarillo pálido */
+    border: 2px solid var(--text-dark, #1a1a1a);
+}
+
+/* Ocultar input radio nativo y crear el customizado (cuadrado) */
+.diff-option input[type="radio"] {
+    display: none;
+}
+
+.custom-radio {
+    width: 18px;
+    height: 18px;
+    border: 2px solid var(--text-dark, #1a1a1a);
+    margin-right: 20px;
+    position: relative;
+    background-color: transparent;
+}
+
+/* Relleno del cuadrado cuando está seleccionado */
+.diff-option.selected .custom-radio::after {
+    content: "";
+    position: absolute;
+    top: 3px; left: 3px;
+    width: 8px; height: 8px;
+    background-color: #417B69; /* Verde oscuro */
+}
+
+.diff-text strong {
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+.diff-text {
+    font-size: 1rem;
+    color: #4a4a4a;
+}
+
+.diff-option.selected .diff-text {
+    color: var(--text-dark, #1a1a1a);
+}
+
+.mt-20 {
+    margin-top: 40px;
+}

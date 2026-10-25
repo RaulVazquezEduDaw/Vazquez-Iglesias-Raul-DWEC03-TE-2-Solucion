@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Script principal -->    
+    <script type="module" src="../js/main.js"></script>
+    
+    <!-- Fuentes y estilo -->  
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/juego.css">
+    
+    <title>Pixel Copier</title>
+</head>
+<body>
+    <div class="juego-wrapper">
+        <div class="juego-inner">
+            
+            <!-- Cabecera de tiempo y acierto -->
+            <div class="hud-header">
+                <div class="hud-item">⏱ TIEMPO: <span id="tiempo" class="text-red">0s</span></div>
+                <div class="hud-item">ACIERTO: <span id="acierto" class="text-green">0%</span></div>
+            </div>
+
+            <!-- Zona central de tableros -->
+            <div class="tableros-container">
+                <div class="tablero-col">
+                    <h2 class="tablero-titulo">MODELO</h2>
+                    <div id="contenedor-modelo"></div>
+                </div>
+                <div class="tablero-col">
+                    <h2 class="tablero-titulo">TU LIENZO</h2>
+                    <div id="contenedor-lienzo"></div>
+                </div>
+            </div>
+
+            <div class="divider">
+                <div class="line"></div>
+            </div>
+
+            <!-- Paleta de colores e instrucciones generadas dinámicamente -->
+            <div class="paleta-section">
+                <h3 class="paleta-titulo">PALETA:</h3>
+                <div id="paleta-contenedor" class="paleta-opciones">
+                    <!-- Los colores se inyectarán por JS -->
+                </div>
+                <p class="paleta-instrucciones">
+                    Usa las teclas numéricas para cambiar de color. También puedes borrar con el botón derecho del ratón.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
