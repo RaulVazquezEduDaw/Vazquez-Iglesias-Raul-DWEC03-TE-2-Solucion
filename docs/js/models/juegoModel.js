@@ -9,7 +9,7 @@ export function crearEstadoPartida(dificultadNombre) {
 	const CONFIGS = {
 	    principiante: { size: 5, numColors: 2, time: 60 },
 	    intermedio: { size: 8, numColors: 4, time: 90 },
-	    avanzado: { size: 12, numColors: 6, time: 120 }
+	    avanzado: { size: 12, numColors: 6, time: 180 }
 	};
 	
 	const COLORES_DISPONIBLES = [
