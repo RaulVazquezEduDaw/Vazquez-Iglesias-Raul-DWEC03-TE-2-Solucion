@@ -20,6 +20,9 @@ export function mostrarResultados() {
 		
 		// Acción del botón "JUGAR DE NUEVO"
 		botonVolverAccion();
+		
+		// Acción del botón "SALIR"
+		botonSalirAccion()
 	});
 }
 
@@ -61,9 +64,27 @@ function botonVolverAccion(){
 	const btnJugarNuevo = document.getElementById('btn-jugar-nuevo');
 	btnJugarNuevo.addEventListener('click', () => {
 	    // Elimina el progreso de la partida actual pero manteniendo al usuario logueado
-	    sessionStorage.removeItem('precisionFinal');
+	    limpiaPrecisionFinalDelSessionStorage();
 	    
 	    // Redirige al usuario a la pantalla de instrucciones para volver a elegir dificultad
 	    window.location.href = 'instrucciones.html';
 	});
+}
+
+/**
+ * Controla la acción sobre el botón "Salir"
+ */
+function botonSalirAccion(){
+	const btnJugarNuevo = document.getElementById('btn-salir');
+	btnJugarNuevo.addEventListener('click', () => {
+	    // Elimina el progreso de la partida actual
+	    limpiaPrecisionFinalDelSessionStorage();
+	    
+	    // Redirige al usuario a la pantalla de login
+	    window.location.href = '/index.html';
+	});
+}
+
+function limpiaPrecisionFinalDelSessionStorage(){
+		sessionStorage.removeItem('precisionFinal');
 }

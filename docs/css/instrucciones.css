@@ -1,17 +1,18 @@
 /* Estilos propios de la vista de instrucciones */
 
+
 /* Caja de Instrucciones */
 .info-box {
     background-color: #EEF8F4;
     border-left: 6px solid #417B69;
-    padding: 25px;
-    margin-bottom: 40px;
+    padding: 15px 20px;
+    margin-bottom: 20px;
 }
 
 .info-title {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 0.8rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .info-box p {
@@ -24,9 +25,9 @@
 
 /* Título de selector */
 .section-title {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Courier New', Courier, monospace;;
     font-size: 0.9rem;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 /* Opciones de dificultad */
