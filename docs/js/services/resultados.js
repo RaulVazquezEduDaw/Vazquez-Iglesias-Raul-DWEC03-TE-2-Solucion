@@ -32,7 +32,7 @@ export function mostrarResultados() {
  */
 function accesoAutorizado(precisionString){	
 	if (precisionString === null)
-		window.location.href = '/index.html';
+		window.location.href = '../index.html';
 }
 
 /**
@@ -81,7 +81,7 @@ function botonSalirAccion(){
 	    limpiaPrecisionFinalDelSessionStorage();
 	    
 	    // Redirige al usuario a la pantalla de login
-	    window.location.href = '/index.html';
+	    window.location.href = '../index.html';
 	});
 }
 
