@@ -1,12 +1,12 @@
 /* Estilos propios de la vista de login */
 
 /* ESTILOS DE ERROR */
-.input-error-empty {
+.input-error {
     border: 2px solid #E25E2B !important;
     box-shadow: 4px 4px 0px rgba(226, 94, 43, 0.4);
 }
 
-.tooltip-empty {
+.tooltip {
     position: absolute;
     top: 110%;
     right: 0;

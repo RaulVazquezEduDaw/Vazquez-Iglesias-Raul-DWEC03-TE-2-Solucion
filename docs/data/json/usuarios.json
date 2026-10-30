@@ -19,12 +19,5 @@
 		"apellido" : "Olano",
 		"usuario":"jolano",
 		"contraseña":"9012Ijkl"
-	},
-	{
-		"id":4,
-		"nombre" : "test",
-		"apellido" : "test",
-		"usuario":"test",
-		"contraseña":"test"
 	}
 ]
